@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+}
+
+/* INDEX */
+.btn-form{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ALUNOS */
+.caixa .menus, .alunos{
+    border: solid;
+    border-width: 1px;
+    border-color:rgb(198, 229, 255);
+}
+
+.cadastrar-aluno form .input{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.input input, .cadastrar-aluno .button{
+    margin: 5px;
+}
+
+/* ALUNO ESCONDIDO */
+.cadastrar-aluno{
+    position: fixed;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    display: none;
+}
+
+.cadastrar-aluno form{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+

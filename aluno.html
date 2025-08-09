@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="caixa">
+            <div class="menus">
+                <button class="cadastrar" onclick="mostrarCadastro()">Cadastrar</button>
+            </div>
+
+            <table class="alunos" border="1">
+                <tr>
+                    <th>Nome</th>
+                    <th>Sala</th>
+                    <th>Periodo</th>
+                    <th>Contato</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                </tr>
+                <tr>
+                    <th>Bruno</th>
+                    <th>6</th>
+                    <th>Noite</th>
+                    <th>11 992490355</th>
+                    <th>
+                        <input type="button" value="Editar" class="btn-editar">
+                    </th>
+                    <th>
+                        <input type="button" value="Excluir" class="btn-excluir">
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="cadastrar-aluno" id="cadastro-aluno">
+            <form action="">
+                <div class="input">
+                    <input type="text" name="nome-aluno" id="" placeholder="Nome">
+                    <input type="text" name="sala-aluno" id="" placeholder="Sala">
+                    <input type="text" name="periodo-aluno" id="" placeholder="Periodo">
+                    <input type="text" name="contato-aluno" id="" placeholder="Contato">
+                </div>
+                <div class="button">
+                    <input type="button" value="Cadastrar" class="btn-form">
+                    <input type="button" value="Cancelar" onclick="cancelarCadastro()" class="btn-form">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

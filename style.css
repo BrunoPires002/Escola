@@ -19,17 +19,17 @@
     border-color:rgb(198, 229, 255);
 }
 
-.cadastrar-aluno form .input{
+.cadastrar-aluno form .input, .editar-aluno form .input{
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.input input, .cadastrar-aluno .button{
+.input input, .cadastrar-aluno .button, .editar-aluno .button{
     margin: 5px;
 }
 
 /* ALUNO ESCONDIDO */
-.cadastrar-aluno{
+.cadastrar-aluno, .editar-aluno{
     position: fixed;
     text-align: center;
     justify-items: center;
@@ -41,8 +41,13 @@
     display: none;
 }
 
-.cadastrar-aluno form{
+.cadastrar-aluno form, .editar-aluno form{
     background-color: rgb(255, 255, 255);
     padding: 10px;
+}
+
+.menus button a{
+    text-decoration: none;
+    color: black;
 }
 

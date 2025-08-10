@@ -14,6 +14,7 @@
         <div class="caixa">
             <div class="menus">
                 <button class="cadastrar" onclick="mostrarCadastro()">Cadastrar</button>
+                <button type="button"><a href="./index.html">Sair</a></button>
             </div>
 
             <table class="alunos" border="1">
@@ -31,7 +32,7 @@
                     <th>Noite</th>
                     <th>11 992490355</th>
                     <th>
-                        <input type="button" value="Editar" class="btn-editar">
+                        <input type="button" value="Editar" class="btn-editar" onclick="mostrarEditar()">
                     </th>
                     <th>
                         <input type="button" value="Excluir" class="btn-excluir">
@@ -53,6 +54,20 @@
                 </div>
             </form>
         </div>
+
+        <div class="editar-aluno" id="edita-aluno">
+            <form action="">
+                <div class="input">
+                    <input type="text" name="nome-aluno" id="" placeholder="Nome">
+                    <input type="text" name="sala-aluno" id="" placeholder="Sala">
+                    <input type="text" name="periodo-aluno" id="" placeholder="Periodo">
+                    <input type="text" name="contato-aluno" id="" placeholder="Contato">
+                </div>
+                <div class="button">
+                    <input type="button" value="Editar" onclick="" class="btn-form">
+                    <input type="button" value="Cancelar" onclick="cancelarCadastro()" class="btn-form">
+                </div>
+            </form>
     </div>
 </body>
 </html>
